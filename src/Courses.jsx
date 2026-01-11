@@ -1,5 +1,5 @@
-import React from 'react'
-import CourseCard from './components/CourseCard'
+import React from "react";
+import CourseCard from "./components/CourseCard";
 
 function Courses() {
   return (
@@ -19,4 +19,4 @@ function Courses() {
   )
 }
 
-export default Courses
+export default Courses;

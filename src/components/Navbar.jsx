@@ -8,9 +8,9 @@ function Navbar() {
         <div className="cursor-pointer" style={{ fontFamily: "poppins" }}>
           Subjects
         </div>
-        <div className="cursor-pointer" style={{ fontFamily: "poppins" }}>
-          courses
-        </div>
+        <Link to="/courses" className="cursor-pointer" style={{ fontFamily: "poppins" }}>
+          Courses
+        </Link>
         <div className="cursor-pointer" style={{ fontFamily: "poppins" }}>
           Degrees
         </div>
