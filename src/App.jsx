@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <section className="bg-[#F0F0DA] min-h-screen flex items-center justify-center">
+      <section className="bg-[#F0F0DA] min-h-screen flex items-center justify-center flex-1 flex-wrap">
         <div className="flex max-w-6xl bg-white rounded-3xl shadow-lg overflow-hidden p-16 min-h-[80vh]">
           <div className="flex flex-col justify-between mr-10">
             <div className="mb-8 flex flex-col gap-10 my-2">
@@ -18,16 +18,16 @@ function App() {
                 See your personalized recommendations based on your interest and
                 goals
               </h2>
-              <div className="flex gap-4">
-                <Link to="/courses" className="bg-orange-500 text-white px-6 py-4 rounded-md">
+              <div className="flex flex-1 gap-4 flex-wrap">
+                <Link to="/courses" className="bg-orange-500 text-white px-6 py-4 rounded-md cursor-pointer">
                   Find course
                 </Link>
-                <Link to="/subjects" className="flex items-center gap-2 text-orange-500 shadow px-6 py-4 rounded-md">
+                <Link to="/subjects" className="flex items-center gap-2 text-orange-500 shadow px-6 py-4 rounded-md cursor-pointer">
                   View our subjects <MdArrowOutward />
                 </Link>
               </div>
             </div>
-            <div className="flex gap-8">
+            <div className="flex flex-1 flex-wrap gap-8">
               <div className="flex flex-col py-4 px-8 rounded-lg justify-center text-center border-black border-2">
                 <div className="text-lg">Subjects</div>
                 <div className="text-3xl">+40</div>
@@ -43,7 +43,7 @@ function App() {
             </div>
           </div>
           <div className="w-[30%] justify-center items-center flex rounded-lg">
-            <img src="/image.png" alt="pen" className="size-100" />
+            <img src="/image.png" alt="pen" className="size-100 hidden md:flex" />
           </div>
         </div>
       </section>
