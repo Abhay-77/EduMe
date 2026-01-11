@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router";
 
 const Degrees = () => {
   return (
-    <div>Not done</div>
-  )
-}
+    <div>
+      Not done<br/>
+      <Link to="/">Go back</Link>
+    </div>
+  );
+};
 
-export default Degrees
+export default Degrees;
